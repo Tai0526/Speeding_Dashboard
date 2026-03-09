@@ -238,10 +238,10 @@ def create_sticky_header(data_available_days):
     Uses data_available_days to grey out buttons with no data.
     """
     
-    # 1. Title and Subtitle - Updated to INZU and using id for CSS targeting
+    # 1. Title and Subtitle 
     st.markdown("""
         <div id='dashboard-header' style='position: sticky; top: 0; padding-top: 10px; padding-bottom: 10px; z-index: 1000;'>
-            <h1 style='margin-bottom: 0px;'>INZU Speeding Insights Dashboard</h1>
+            <h1 style='margin-bottom: 0px;'>Speeding Insights Dashboard</h1>
             <p style='margin-top: 0px; color: gray;'>Weekly overview of driver behaviour, risk, and operational impact</p>
         </div>
     """, unsafe_allow_html=True)
@@ -859,4 +859,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
